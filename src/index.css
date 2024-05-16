@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+* {
+  font-family: "Poppins", serif !important;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+/* Scroll Bar CSS */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(166, 166, 166, 1);
+  border-radius: 5px;
+  opacity: 0.2;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.dashboard .MuiBackdrop-root {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  backdrop-filter: blur(10px);
+}
+.checkbox-wrapper input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-wrapper .terms-label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-wrapper .terms-label .label-text {
+  margin-left: 10px;
+}
+
+.checkbox-wrapper .checkbox-svg {
+  width: 30px;
+  height: 30px;
+}
+
+.checkbox-wrapper .checkbox-box {
+  fill: rgba(207, 205, 205, 0.425);
+  stroke: #8c00ff;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  transition: stroke-dashoffset 0.6s ease-in;
+}
+
+.checkbox-wrapper .checkbox-tick {
+  stroke: #8c00ff;
+  stroke-dasharray: 172;
+  stroke-dashoffset: 172;
+  transition: stroke-dashoffset 0.6s ease-in;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + .terms-label .checkbox-box,
+.checkbox-wrapper input[type="checkbox"]:checked + .terms-label .checkbox-tick {
+  stroke-dashoffset: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* // not working */
+select option:focus {
+  border: 0px;
+  outline: 0px;
+  -webkit-appearance: none;
+  outline: none !important;
+}
+
+.custom-select {
+  border: none;
+  background: none; /* To prevent background color from showing through in some browsers */
+  padding: 0.5rem; /* Add some padding to make the text look better */
+  font-size: 1rem;
+  outline: none; /* Remove the focus outline */
+}
+
+.breadcrambs::-webkit-scrollbar {
+  display: none;
+}
+
+.glass {
+  background-color: rgba(255, 255, 255,.2)
+
+}
